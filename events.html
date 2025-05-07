@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Sarai Hurst Designs</title>
+  <link rel="stylesheet" href="Style.css" />
+  <link rel="stylesheet" href="events.css"/>
+  <script>
+    // JavaScript to display package descriptions
+    document.addEventListener("DOMContentLoaded", function() {
+      document.querySelectorAll('.box').forEach(button => {
+        button.addEventListener('click', function() {
+          const description = this.getAttribute('data-description');
+          const descriptionBox = this.closest('.package').querySelector('.package-description');
+          descriptionBox.textContent = description;
+        });
+      });
+    });
+  </script>
+</head>
+<body>
+
+  <header>
+    <div class="logo">
+      <a href="index.html">
+        <img src="Shurst_logo_1.png" alt="Sarai Hurst Designs Logo" />
+      </a>
+    </div>
+    <div class="bar">
+      <ul>
+        <li><a href="branding.html">Branding Campaigns</a></li>
+        <li><a href="digital.html">Digital Communications</a></li>
+        <li><a href="events.html">Events & Planning</a></li>
+        <li><a href="contact.html">Contact</a></li>
+      </ul>
+    </div>
+  </header>
+
+  <main class="branding-section">
+    <h1>Events & Planning </h1>
+    <div class="packages">
+
+      <!-- Launch Package -->
+      <div class="package launch" onclick="this.classList.toggle('flipped')">
+        <div class="flip-inner">
+          <div class="flip-front">
+            <h2>Event Essentials</h2>
+            <div class="package-graphics">
+              <img src="event_essentials_iconn.png" alt="Launch Icon" class="launch-icon" />
+            </div>
+          </div>
+          <div class="flip-back">
+            <p>
+              This package ecompasses all the foundational
+              design elements needed for your event.
+              This package is great for birthdays, 
+              small business launches, and
+               private celebrations. 
+            </p>
+            <ul style="list-style: none; padding-left: 0; font-size: 0.9em; margin-top: 20px;">
+              <li><a href="event_essentials.html"><strong>Event logo/monogram design</strong> 
+                </a></li>
+                <li><a href="event_essentials.html"><strong>Basic invitation design</strong> (digital or printable)
+                  </a></li>
+                  <li><a href="event_essentials.html"><strong>Color palette and mood board</strong> 
+                    </a></li>
+                    <li><a href="event_essentials.html"><strong>Event stationery template</strong> (menus, place cards, 
+                      or name tags)
+                      </a></li>
+
+
+            </ul>
+          </div>
+        </div>
+      </div>
+
+      <!-- Growth Package -->
+      <div class="package growth" onclick="this.classList.toggle('flipped')">
+        <div class="flip-inner">
+          <div class="flip-front">
+            <h2>Visual Impact</h2>
+            <div class="package-graphics">
+              <img src= "visual_impact.png" alt="Event Icon" class="launch-icon" />
+            </div>
+          </div>
+          <div class="flip-back">
+            <p>
+              The Growth Package supports your expanding business with refreshed branding and outreach tools.
+            </p>
+            <ul style="list-style: none; padding-left: 0; font-size: 0.9em; margin-top: 20px;">
+                <li><a href="visual_impact.html"><strong>Custom event branding </strong> (logo, icons, tagline styling)</a></li>
+              <li><a href="visual_impact.html"><strong>Invitation suite</strong> (digital + print-ready) </a></li>
+              <li><a href="visual_impact.html"><strong>Social media kit </strong> (announcement posts, 
+                story templates) </a></li>
+              <li><a href="visual_impact.html"><strong>Event stationery template</strong> (menus, place cards, programs) </a></li>
+            </ul>
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </main>
+
+  <footer class="social-footer">
+    <div class="social-icons">
+      <a href="https://www.linkedin.com/in/sarai-hurst-2bab96278/" target="_blank">
+        <img src="linkedin_icon.png" alt="LinkedIn">
+      </a>
+      <a href="https://www.behance.net/saraihurst" target="_blank">
+        <img src="Behance_frame.png" alt="Behance">
+      </a>
+    </div>  
+  </footer>
+
+</body>
+</html>
