@@ -1,0 +1,126 @@
+
+/* Main branding section */
+body {
+    margin: 0;
+    font-family: 'Arial', sans-serif;
+    background-color: #ffffff;
+    color: rgb(255, 156, 209);
+    padding-bottom: 100px; /* spacing before footer */
+    overflow-x: hidden;
+  }
+  
+  
+  .branding-section {
+      text-align: center;
+      padding: 160px 20px 40px; /* top padding adjusted for fixed header */
+    }
+    body {
+        background-image: url('digital_background.jpg');
+        background-size: cover;
+        background-repeat: no-repeat;
+        background-position: center;
+      }
+    
+    /* Packages container */
+    .packages {
+      display: flex;
+      justify-content: center;
+      gap: 40px;
+      flex-wrap: wrap;
+    }
+    
+    /* Package cards */
+    .package {
+      background-color: #fbecf9;
+      padding: 30px;
+      width: 300px;
+      min-height: 400px;
+      border-radius: 10px;
+      box-shadow: 0 5px 20px rgba(0,0,0,0.1);
+      perspective: 1000px;
+      cursor: pointer;
+      font-family: Arial, Helvetica, sans-serif;
+    }
+  
+    /* Links inside the package box */
+  .package a {
+    color: #ff69b4; /* Pink color */
+    text-decoration: none; /* Optional: removes underline */
+  }
+  
+  .package a:hover {
+    color: #ff1493; /* Darker pink on hover */
+    text-decoration: underline; /* Optional: adds underline on hover */
+  }
+  
+    
+    .flip-inner {
+      position: relative;
+      width: 100%;
+      transition: transform 0.8s;
+      transform-style: preserve-3d;
+    }
+    
+    .package.flipped .flip-inner {
+      transform: rotateY(180deg);
+    }
+    
+    .flip-front,
+    .flip-back {
+      position: absolute;
+      width: 100%;
+      backface-visibility: hidden;
+      padding: 40px;
+      box-sizing: border-box;
+      border-radius: 8px;
+      background-color: #f7deef;
+      border: 2px solid #f49fc3;
+      box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+      font-family: Arial, Helvetica, sans-serif;
+      color: #f3a7c0;
+    }
+    
+    .flip-front {
+      z-index: 2;
+    }
+    
+    .flip-back {
+      transform: rotateY(180deg);
+    }
+    
+    .package-graphics {
+      display: flex;
+      justify-content: center;
+      align-items: flex-end;
+      gap: 10px;
+      margin-top: 40px;
+    }
+    
+    .launch-icon {
+      width: 100px;
+      height: 100px;
+      object-fit: contain;
+      border-radius: 8px;
+    }
+    
+    /* Footer */
+    footer.social-footer {
+      position: relative; /* Changed from fixed */
+      width: 100%;
+      background-color: #f4bfd1;
+      text-align: center;
+      padding: 20px 0;
+      z-index: 1;
+      margin-top: 60px;
+    }
+    
+    .social-icons img {
+      width: 30px;
+      height: auto;
+      margin: 0 10px;
+      transition: opacity 0.3s;
+    }
+    
+    .social-icons img:hover {
+      opacity: 0.7;
+    }
